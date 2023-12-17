@@ -33,7 +33,7 @@ services:
     volumes:
       - vprodbdata:/usr/local/tomcat/webapps
 
-  vprodb:
+  vproweb:
     build:
       context: ./Docker-files/web
     image: arzoosuri/vprofileweb
