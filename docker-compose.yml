@@ -7,8 +7,6 @@ services:
     container_name: vprodb
     ports:
       - "3306:3306"
-    volumes:
-      - vprodbdata:/var/lib/mysql
     environment:
       - MYSQL_ROOT_PASSWORD:admin123
   vprocache01:
@@ -42,5 +40,4 @@ services:
       - "80:80"
 
 volumes:
-  vprodbdata: {}
   vproappdata: {}
